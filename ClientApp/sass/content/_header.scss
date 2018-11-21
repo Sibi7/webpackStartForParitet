@@ -1,0 +1,205 @@
+.header {
+  position: relative;
+  padding: 20px 40px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  &__menu {
+    position: relative;
+    margin: 0;
+    width:calc(100% - 470px);
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    li {
+      position: relative;
+      a,span {
+        display: block;
+        padding: 11px 20px 10px 20px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: $blue;
+        border:1px solid transparent;
+        transition: .3s;
+        white-space: nowrap;
+        &:hover:not(.header__menu--active) {
+          color: #0062b2;
+          transition: .3s;
+        }
+      }
+    }
+    &--active {
+      border: 1px solid $blue !important;
+      box-sizing: border-box;
+    }
+    &--disabled {
+      &:not(.header__menu--active) {
+        color: #aaa!important;
+        pointer-events: none;
+      }
+    }
+  }
+  &__user {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 280px;
+    margin-left: 40px;
+    flex-shrink: 0;
+    &:hover {
+      img {
+        border: 1px solid $someone-hover;
+        transition: .4s;
+      }
+    }
+    img {
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+      border: 1px solid transparent;
+      transition: .4s;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    a {
+      font-size: 14px;
+      margin: 0;
+      span {
+        display: block;
+        font-size: 12px;
+        white-space: nowrap;
+        color: #000;
+        margin-top: 5px;
+        font-weight: 400;
+      }
+    }
+    &--menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      padding: 5px 8px;
+      box-sizing: border-box;
+      margin: 0;
+      margin-top: 5px;
+      background: #fff;
+      border: 1px solid #d6d6d6;
+      box-shadow: 0 6px 12px 0 #ddd;
+      min-width: 200px;
+      z-index: 3;
+      li {
+        list-style: none;
+        a,span, input {
+          display: block;
+          padding: 5px 0;
+          font-weight: 400;
+          font-size: 13px;
+          color: #000;
+          white-space: nowrap;
+          box-sizing: border-box;
+          width: 100%;
+          cursor: pointer;
+          border:none;
+          background-color: transparent;
+          text-align: left;
+        }
+      }
+    }
+  }
+  &__filter {
+    width:calc(100% - 470px);
+    margin-right: 20px;
+
+    &--field {
+      .open-filter-modal {
+        display: block;
+        >img {
+          margin-right: 10px;
+        }
+      }
+      .autofilter {
+        display: none;
+        align-items: center;
+        margin:0px 5px;
+        font-size: 14px;
+        color: #000;
+        span {
+          margin-right: 5px;
+        }
+      }
+      form {
+        width: 100%;
+      }
+      input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        font-size: 14px;
+        &:focus {
+          &::placeholder {
+            color: transparent;
+          }
+        }
+      }
+      display: flex;
+      align-items: center;
+    }
+    .filter {
+      top: 65px;
+      width: auto;
+      left: auto;
+      &__body {
+        max-height: none;
+        height: auto;
+        .filter {
+          display: none;
+          top:auto!important;
+          max-width: 400px;
+          &__body {
+            max-height: 170px;
+          }
+        }
+      }
+    }
+  }
+  &__back {
+    display: flex!important;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 15px 10px 0px!important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: $blue;
+    background-color: transparent;
+    border: none;
+    transition: .3s;
+    white-space: nowrap;
+    cursor: pointer;
+    &:before {
+      margin-right: 5px;
+      content: '';
+      display: block;
+      height: 20px;
+      width: 20px;
+      background: url(../images/icons/left-arrow.png) center center no-repeat;
+      background-size: cover;
+    }
+    &:hover {
+      color: #0062b2;
+    }
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .adm-header__menu {
+    margin-right: calc(100% - 815px);
+  }
+}
+

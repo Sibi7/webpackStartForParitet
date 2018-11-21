@@ -1,0 +1,216 @@
+label {
+  color: #000;
+  min-height: auto !important;
+  font-size: 13px;
+
+}
+
+input[type="radio"].circleRadio {
+  display: none;
+  + label {
+    position: relative;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border: 1px solid #909090;
+    border-radius: 50%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      height: 10px;
+      width: 10px;
+      background-color: transparent;
+      border-radius: 50%;
+    }
+  }
+  &:checked {
+    + label {
+      &:after {
+        top: 2px;
+        left: 2px;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        transform: none;
+        background-color: #0070CC;
+      }
+    }
+  }
+  &:disabled{
+    + label:last-child{
+      opacity: 0.2;
+      color: red;
+    }
+  }
+}
+
+input[type="radio"].circleRadioRadiance {
+  display: none;
+  + label {
+    position: relative;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border: 1px solid #909090;
+    border-radius: 50%;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      height: 6px;
+      width: 6px;
+      background-color: transparent;
+      border-radius: 50%;
+    }
+  }
+  &:checked {
+    + label {
+      &:after {
+        top: 2px;
+        left: 2px;
+        height: 6px;
+        width: 6px;
+        transform: none;
+        background-color: #0070cc;
+      }
+    }
+  }
+  &:disabled{
+    + label{
+      opacity: 0.2;
+      color: red;
+    }
+  }
+}
+
+
+.circleRadioLabel,
+.squareRadioLabel,
+.squareRadioRadianceLabel,
+.circleRadioRadianceLabel {
+  margin-right: 8px;
+}
+
+.circleRadioWrap,
+.squareRadioWrap {
+  overflow: hidden;
+  padding: 5px 0;
+  display: flex;
+  align-items: center
+}
+
+.squareRadioRadianceWrap,
+.circleRadioRadianceWrap {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.radioContainer {
+  width: 175px;
+  margin: 0 auto;
+}
+
+.squareRadioWrap {
+  input[type="radio"].squareRadio {
+    display: none;
+    + label {
+      position: relative;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-color: transparent;
+      border: 2px solid #fff;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        height: 10px;
+        width: 10px;
+        transform: scale(2, 2);
+        background-color: transparent;
+        transition: all .2s ease-in-out;
+      }
+    }
+    &:checked {
+      + label {
+        &:after {
+          top: 3px;
+          left: 3px;
+          height: 10px;
+          width: 10px;
+          transform: none;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.squareRadioRadianceWrap {
+  input[type="radio"].squareRadioRadiance {
+    display: none;
+    + label {
+      position: relative;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-color: transparent;
+      border: 2px solid #fff;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        height: 10px;
+        width: 10px;
+        transform: scale(2, 2);
+        background-color: transparent;
+        transition: all .2s ease-in-out;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        height: 20px;
+        width: 20px;
+        transform: none;
+        border: 2px solid rgba(225, 225, 225, .3);
+        transition: all .3s ease-in-out;
+      }
+    }
+    &:checked {
+      + label {
+        &:after {
+          top: 3px;
+          left: 3px;
+          height: 10px;
+          width: 10px;
+          transform: none;
+          background-color: #fff;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          height: 20px;
+          width: 20px;
+          transform: scale(1.8, 1.8);
+          border: 2px solid transparent;
+        }
+      }
+    }
+  }
+}

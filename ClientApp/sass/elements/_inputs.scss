@@ -1,0 +1,101 @@
+.t-search {
+  min-width: 300px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 0 25px 0 10px!important;
+  font-size: 14px;
+  color: #000;
+  box-sizing: border-box;
+  font-weight: 400;
+  background: url(../images/icons/search2.png) 98% 50% no-repeat;
+  &:hover {
+    background: url(../images/icons/search2-hover.png) 98% 50% no-repeat;
+  }
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+  &--disabled {
+    background: url(../images/icons/delete.png) 98% 50% no-repeat;
+    pointer-events: none;
+    &:hover {
+      background: url(../images/icons/delete.png) 98% 50% no-repeat;
+    }
+  }
+  &--cross {
+    background: url(../images/icons/delete.png) 98% 50% no-repeat;
+    &:hover {
+      background: url(../images/icons/delete.png) 98% 50% no-repeat;
+    }
+  }
+}
+.mass-search {
+  min-width: 345px;
+  height: 30px;
+  border: 1px solid transparent;
+  padding: 0 0 0 35px!important;
+  font-size: 14px;
+  color: #000;
+  box-sizing: border-box;
+  font-weight: 400;
+  background: url(../images/icons/icon_search.svg) 2% 50% no-repeat;
+  transition: border 400ms;
+  &:hover {
+    background: url(../images/icons/icon_search.svg) 2% 50% no-repeat;
+  }
+  &::placeholder {
+    font-style: italic;
+  }
+  &:focus {
+    border: 1px solid $gray-controls;
+    background: none;
+    transition: border 400ms;
+    padding: 0 0 0 20px!important;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+  &--disabled {
+    background: url(../images/icons/delete.png) 98% 50% no-repeat;
+    pointer-events: none;
+    &:hover {
+      background: url(../images/icons/delete.png) 98% 50% no-repeat;
+    }
+  }
+  &--cross {
+    background: url(../images/icons/delete.png) 98% 50% no-repeat;
+    &:hover {
+      background: url(../images/icons/delete.png) 98% 50% no-repeat;
+    }
+  }
+}
+.act_t-search {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  display: block;
+  left: 275px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.validate-input {
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 0 25px 0 10px!important;
+  font-size: 14px;
+  color: #000;
+  box-sizing: border-box;
+  font-weight: 400;
+  background-size: 13px;
+  background-position:  98% 50%;
+  background-repeat: no-repeat;
+  &__true {
+    background-image: url(../images/icons/valid-true.png);
+  }
+  &__false {
+    background-image: url(../images/icons/valid-false.png);
+  }
+}

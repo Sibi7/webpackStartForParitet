@@ -1,0 +1,50 @@
+table.groups-list {
+
+  tr:last-of-type td {
+    border-bottom: 1px solid #ccc;
+  }
+  th, td {
+    padding: 10px 5px;
+    text-align: left;
+    .someone {
+      a {
+        color: $someone;
+      }
+    }
+  }
+  th {
+    span {
+      display: inline!important;
+      position: relative;
+    }
+  }
+
+  .g-name {
+    width: 18%;
+  }
+  .g-review {
+    width: 24%;
+  }
+  .g-inside {
+    width: calc(30% - 80px);
+  }
+  .g-outside {
+    width: 10%;
+  }
+  .g-regs {
+    width: 10%;
+  }
+  .g-bills {
+    width: 8%;
+  }
+  .g-delete {
+    width: 80px;
+  }
+  .g-inside,
+  .g-outside,
+  .g-regs,
+  .g-bills,
+  .g-delete {
+    text-align: right;
+  }
+}

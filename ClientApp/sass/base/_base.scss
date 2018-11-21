@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: left;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    min-height: 450px;
+    overflow-y: hidden;
+    @include breakpoint(max-height 450px) {
+        overflow: auto;
+    }
+}
+
+a {
+    text-decoration: none;
+    &:hover, &:focus, &:active{
+        text-decoration: none;
+    }
+}
+
+input{
+    outline: none;
+    &:hover, &:focus, &:active{
+        outline: none;
+    }
+}
+
+textarea{
+    outline: none;
+    &:hover, &:focus, &:active{
+        outline: none;
+    }
+}
+
+li {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
+select {
+    appearance: none;
+}
+
+%clearfix {
+    *zoom: 1;
+    &:after {
+        content: '';
+        display: table;
+        line-height: 0;
+        clear: both;
+    }
+}

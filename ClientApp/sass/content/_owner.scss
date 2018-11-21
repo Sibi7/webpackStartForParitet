@@ -1,0 +1,56 @@
+.owner {
+  display: flex;
+  .content__section {
+    width: calc(100% - 400px);
+  }
+}
+
+.owner-voting {
+  font-size: 13px;
+  font-weight: 400;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+
+thead {
+  .ov-voting {
+    width: 15%;
+  }
+}
+tbody {
+  .ov-register {
+    color: $someone!important;
+    font-weight: 400;
+    transition: .4s;
+    cursor: pointer;
+    &:hover {
+      color: $someone-hover!important;
+      transition: .4s;
+    }
+    a {
+      color: $someone!important;
+      &:visited {
+        color: $someone;
+      }
+    }
+  }
+}
+
+.edit-status-meeting {
+  cursor: pointer;
+}
+
+.owner-issuer-list {
+  .table {
+    td {
+      color: #0062b3;
+      font-weight: 400;
+    }
+  }
+}
+.mi-register,
+.ov-register,
+.b-number {
+  width: 110px;
+}

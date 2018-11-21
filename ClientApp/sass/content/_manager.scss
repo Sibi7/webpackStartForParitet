@@ -1,0 +1,43 @@
+.manager-meeting-list {
+  display: flex;
+  height: 100%;
+  table {
+    tbody {
+      td {
+        white-space: normal;
+      }
+    }
+  }
+  .content__section {
+    width: calc(100% - 320px);
+  }
+  .list__footer {
+    span {
+      margin-bottom: 10px;
+      &:last-of-type {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.select2 {
+  width: 100%!important;
+  min-height: 200px;
+  height: 100%;
+}
+#meetingDocuments{
+  .select2{
+    min-height: 350px;
+  }
+}
+.selection {
+  height: 100%;
+}
+.select2-selection {
+  height: 100%;
+}
+.select2-dropdown {
+  font-size: 13px;
+  width: 300px!important;
+}

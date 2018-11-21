@@ -1,0 +1,111 @@
+.content__messages {
+  display: flex;
+  flex-direction: column;
+  .not-read-message {
+    border-color: #5ccc3d!important;
+    .content__message--title {
+      font-weight: 700!important;
+    }
+  }
+  .read-message {
+    border-color: #f29c24!important;
+  }
+  .not-active-message {
+    border-color: #777!important;
+    color: #777!important;
+  }
+}
+
+
+.content__message {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-left: 3px solid transparent;
+  margin-bottom: 20px;
+  &--row {
+    display: flex;
+    padding: 4px 0;
+  }
+  &--title {
+    font-size: 15px;
+  }
+  &--more {
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px 5px 5px;
+    span {
+      display: block;
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      border: 1px solid $blue;
+      margin: 0px 1px;
+      box-sizing: border-box;
+    }
+    &:before,
+    &:after {
+      display: block;
+      content: '';
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      border: 1px solid $blue;
+      margin: 0px 1px;
+      box-sizing: border-box;
+    }
+  }
+  &--add {
+    box-sizing: border-box;
+    padding: 0px 3px;
+    cursor: pointer;
+    input {
+      display: none;
+    }
+  }
+  &--date {
+    margin-left: auto;
+    font-size: 13px;
+  }
+  &--from {
+    margin: 0;
+    font-size: 13px;
+  }
+  &--term {
+    margin: 0;
+    font-size: 13px;
+    color: #777;
+  }
+}
+
+.write-msg {
+  display: none;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  &__header {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  &__body {
+    width: 100%;
+    padding: 20px;
+    textarea {
+      width: 100%;
+      border: none;
+      resize: none;
+      min-height: 150px;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+  }
+}

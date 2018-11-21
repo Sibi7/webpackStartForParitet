@@ -1,0 +1,25 @@
+.field-validation-error {
+  margin-left: 10px;
+  font-size: 12px;
+  color: red;
+}
+
+.field-validation-valid {
+  display: none;
+}
+
+input.input-validation-error {
+  border: 1px solid red!important;
+}
+
+input[type="checkbox"].input-validation-error {
+  border: 0 none;
+}
+
+.validation-summary-errors {
+  color: red;
+}
+
+.validation-summary-valid {
+  display: none;
+}

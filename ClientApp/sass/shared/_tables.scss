@@ -1,0 +1,157 @@
+//Таблица находится в роли менеджера в собрании
+.constraint-table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+  table-layout: fixed;
+  th, td {
+    height: 41px;
+  }
+  th {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  tr {
+    border-bottom: 1px solid #ccc;
+  }
+  td {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ast-quorum {
+    width: 7%;
+    text-align: center;
+  }
+  .ast-solution {
+    width: 7%;
+    text-align: center;
+  }
+  .ast-bill {
+    width: 8%;
+  }
+  .ast-name {
+    width: 21%;
+  }
+  .ast-type {
+    width: 150px;
+  }
+  .ast-all {
+    width: 130px;
+    padding-right: 30px;
+    text-align: right;
+  }
+  .ast-voting {
+    width: 110px;
+    padding-right: 30px;
+    text-align: right;
+  }
+  .ast-reason {
+    width: 185px;
+  }
+  .ast-actions {
+    width: 20px;
+  }
+}
+
+//Таблица находится в роли владельца во вкладке счета
+.bills-balance-table {
+  th,td {
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      text-align: right;
+      .sub-table {
+        right: 0!important;
+      }
+      .hidden-row {
+        align-items: flex-end;
+      }
+    }
+  }
+  tbody {
+    td {
+      vertical-align: top;
+      padding-top: 14px;
+      box-sizing: border-box;
+      &:last-of-type {
+        padding-right: 0;
+      }
+      span {
+        display: block;
+        height: 13px;
+      }
+    }
+  }
+  .hidden-row {
+    span {
+      display: block;
+      padding: 5px 0;
+      height: 30px;
+      position: relative;
+      &:first-of-type {
+        padding-top: 10px;
+      }
+    }
+  }
+  .show-all-state {
+    display: block;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .bl-par,
+  .bl-sum {
+    width: 13%;
+  }
+  td.bl-num {
+    color: #0062b3;
+    * {
+      color: #0062b3;
+      &:visited {
+        color: #0062b3;
+      }
+    }
+  }
+}
+
+//Таблица находится в роли владельца во вкладке счета
+.bills-statement-table {
+  th,td {
+    &:nth-of-type(3) {
+      text-align: right;
+    }
+    &:nth-of-type(4) {
+      text-align: right;
+    }
+  }
+}
+
+//Таблица находится в роли администратора во вкладке группы/группы
+.group-users-table {
+  td {
+    font-size: 14px;
+    padding: 10px 0;
+    &:first-of-type {
+      color: #777;
+      padding-right: 30px;
+    }
+  }
+}
+
+//Таблица находится в роли администратора во вкладке группы/реестры/счета
+.group-registers-table,
+.group-bills-table {
+  td {
+    &:last-of-type {
+      text-align: right;
+      padding-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.test-check,
+.edit-pass, .find,
+.admin-represent,
+.need-hide-btn,
+.select2-take-all {
+  color: #0062b2!important;
+  font-size: 13px;
+  cursor: pointer;
+  transition: .3s;
+  background-color: transparent;
+  border: none;
+  &:hover,
+  &:active {
+    color: #004680;
+  }
+}
+.test-check,
+.edit-pass, .find{
+  font-weight: 400;
+  padding-left: 10px;
+}
+.need-hide-btn {
+  display: block;
+  outline: none;
+}
+.select2-take-all {
+  position: absolute;
+  top: 30px;
+  padding: 0;
+}

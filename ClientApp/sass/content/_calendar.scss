@@ -1,0 +1,44 @@
+.calendar {
+  width: 280px;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    background-color: #fafafa;
+    td {
+      padding: 10px;
+    }
+    thead {
+      tr:last-of-type {
+        color: #999;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      tr:nth-child(1) td:nth-child(1):hover,
+      tr:nth-child(1) td:nth-child(3):hover {
+        cursor: pointer;
+      }
+    }
+    tbody {
+      color: #000;
+
+    }
+    .holiday {
+      color: #0062b3;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  &__head {
+    background-color: $blue;
+    color: #fff;
+    td {
+      padding: 12px;
+    }
+  }
+
+}

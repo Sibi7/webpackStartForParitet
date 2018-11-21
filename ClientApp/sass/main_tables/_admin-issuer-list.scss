@@ -1,0 +1,22 @@
+.admin-issuers-list {
+  tbody {
+    td:first-of-type {
+      color: #0062b3;
+      font-weight: 400;
+      cursor: pointer;
+      a {
+        color: #0062b3;
+      }
+      a:visited {
+        color: #0062b3;
+      }
+    }
+  }
+}
+.ai-register {
+  width: 90px;
+}
+.ai-name,
+.mi-name {
+  width: 200px;
+}

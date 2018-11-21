@@ -1,0 +1,31 @@
+.bills {
+
+  //Временные стили ++++
+
+  .content__block {
+    border: none!important;
+    padding: 0!important;
+    margin: 0!important;
+  }
+
+  //Временные стили ----
+
+
+  .string__key {
+    min-width: 165px;
+  }
+
+  .arrow-down {
+    display: inline-flex;
+    margin-left: 10px;
+    &:before {
+      border-top-color: $someone;
+    }
+  }
+  .active-period {
+    color: #000!important;
+  }
+  .st-date {
+    width: 160px;
+  }
+}

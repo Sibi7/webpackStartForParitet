@@ -1,0 +1,64 @@
+.manager-voting-list {
+  th {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+}
+.mml-number {
+  width: 65px;
+}
+.mml-name {
+  span {
+    display: block;
+  }
+}
+.mml-status {
+  min-width: 90px;
+  max-width: 190px;
+  width: 15%;
+}
+.mml-actions {
+  width: 30px;
+}
+thead {
+  .mv-register,
+  .vil-bill {
+    width: 10%;
+  }
+  .mml-number {
+    width: 90px;
+  }
+  .mml-name {
+    width: 36%;
+  }
+  .mml-date {
+    width: 10%;
+  }
+  .vil-lk,
+  .vil-owner {
+    width: 25%;
+  }
+  .vil-actions {
+    width: 100px;
+  }
+  .mi-inn,
+  .ai-inn{
+    width: 100px;
+  }
+}
+tbody {
+  .mml-number {
+    font-weight: 400;
+  }
+}
+thead, tbody {
+  .vil-status {
+    width: 200px;
+    text-align: center;
+  }
+  .vil-all {
+    width: 115px;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
